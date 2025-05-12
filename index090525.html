@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // regression function
+        function factorial(n){
+            // n(n-1)!
+            if(n==1)
+            return 1
+                return n*factorial(n-1)
+            
+        };
+        console.log(factorial(5));
+
+
+        /// even 
+
+        // let isEven=function(num){ // here isEven is a Function
+        //     return num%2==0
+        // }
+        // console.log(isEven(5))
+        // console.log(isEven(10))
+
+
+        // odd
+        let isOdd=function(num){
+            return num%2!==0
+        }
+        console.log(isOdd(5))
+        console.log(isOdd(1035))
+        console.log(isOdd(5000000000))
+
+        // set  (set is obj.its collection of value and it will be unique its remove duplicate)
+
+        let arr=[10,20,30,40,30,70,70,10];
+        let setval=new Set(arr);
+        console.log(arr)
+        console.log(setval)
+
+// and
+let myset2=new Set()
+myset2.add(4);
+myset2.add(40);
+myset2.add(7)
+myset2.add(40)
+console.log(myset2)
+
+
+
+
+    </script>
+
+</body>
+</html>

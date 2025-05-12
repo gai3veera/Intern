@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Array Methods
+        let country=['India','Australia','USA'];
+        country.push('France');  // to add a element to right end
+        console.log(country);
+        
+        country.pop(); // to remove element to right-end
+        console.log(country);
+    
+         // shift and unshift
+
+         let number=[10,20,30,40];
+         number.shift();  // to remove the element to left-side
+         console.log(number);
+         
+            number.unshift(50,60); // to add the element from left 
+            console.log(number);  
+
+            // map
+
+            const student=[{name:'gayu',age:25},
+                {name:'amy',age:28}
+            ];
+            const names=student.map(student=>student.name);
+            console.log(names);
+             
+            // ex
+
+            const states=[{state:'Tamilnadu',language:'tamil'},{state:'kerala',language:'malayalam'},{state:'odisa',language:'odisi'}];
+            const language=states.map(states=>states.language);
+            console.log(language);
+
+            
+// filter
+
+        const person=[{name:'anu',degree:'bca'},{name:'banu',degree:'bcom'},{name:'shalu',degree:'bca'}];
+        const department=person.filter(person=>person.degree==='bca');
+        console.log(department);
+
+        const person1=person.find(person=>person.name=="shalu");  // to use find specific data.
+        console.log(person1);
+
+
+//includes  ------ check if the value is presnent means return true value or return false value
+
+const square=[2,4,8,32]
+console.log(square.includes(2,0));
+console.log(square.includes(32,4)); // 1st one indicate value && 2nd line indicate index
+
+// foreach
+
+const num=[10,20,30,40,50];
+num.forEach((num)=>{
+    console.log(num);
+});
+    
+const fruit=['Apple','orange','graps','banana','mango'];
+fruit.forEach((fruit)=>{console.log(fruit);})
+console.log(fruit);
+
+//slice method  
+ 
+const a= fruit.slice(1,3); // it will show 1 and 2 output---- orange,graps
+console.log(a);
+ 
+// splice method
+
+const b=fruit.splice(0,4);// it will display index 0 to 3  
+console.log(b);
+
+// spread operator its like concat
+
+const name=['Gayathri V'];
+const name1=['Amala V'];
+const name2=['siva'];
+const name3=[...name,...name1,...name2];
+console.log(name3);
+
+
+let vehicle={
+    car:"tata",
+    bicycle:'bsa',
+    bike:'hero honda'
+};
+let vehicle1={
+    lorry:"mehindra",
+    flight:'Airindia'
+
+};
+let c={...vehicle,...vehicle1}
+console.log(c);
+
+const studentname='Gayathri';
+ans=[...studentname];
+console.log(ans);
+   
+
+//Anonymous Function
+const fullName=function(firstname,lastname)
+{
+    return firstname +" "+ lastname;
+}
+let Fullname=fullName("Gayathri","Veerappan");
+console.log(Fullname);
+
+
+
+// foreach method
+
+const colors = ["red", "green", "blue"];
+colors.forEach((color, index) => {
+  console.log(index + ": " + color);
+});
+
+
+//// Map
+
+let priceUSD=[20,30,40]
+let priceINR=priceUSD.map(x=>x*80)
+console.log(priceINR);
+priceINR.forEach((priceUSD,index)=>{
+    console.log(index+":"+priceUSD);
+})
+
+
+const input=[{name:'Gayu',age:40},
+    {name:'amy',age:24},
+    {name:'siva',age:52}
+]
+const ages=input.map(x=>x.age)
+console.log(ages)
+
+
+// filter
+
+let cost=[130,150,280,360,20,40,30]
+let lessThan100=cost.filter(x=>x<100)
+console.log(lessThan100)
+
+
+  
+let d=500;
+let e=d;
+console.log(e);
+console.log(d)
+d=700;
+console.log(d);
+
+// reference datatype
+let obj1={name:'gayu',age:40}
+let obj2=obj1;
+obj1.age=35
+console.log(obj1,obj2) // here it will change both obj1 and obj2.
+
+let array=['apple','banana','grapse']
+let array1=array
+console.log(array,array1)
+array[0] = 'orange'  // here if u change specific value in array it will affect a same value in array 1
+console.log(array,array1)
+
+
+
+   </script>
+</body>
+</html>

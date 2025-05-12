@@ -1,0 +1,135 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length convertor</title>
+</head>
+<body>
+   <div id="wrapper" >
+    <h2>cm to inches</h2>
+    <div class="inputdiv">
+        <input type="text" id="input" placeholder="length in cm">
+    </div><br>
+    <div>
+        <button type="submit" onclick="convert()">Convert into inches</button>
+    </div><br>
+    <div id="result">
+        
+    </div>
+   </div>
+   <script>
+function convert(){
+    let cmvalue=Number(document.getElementById("input").value)
+    let inchvalue=cmvalue/2.54; // formula
+    let result=document.getElementById("result")
+    result.innerHTML=inchvalue.toFixed(3)+" inches"; // to fixed is used to howmany decimal needed.
+} -->
+
+
+//program 2
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div#wrapper
+    >
+    <h2>Celcius to Fahrenheit convertor</h2>
+    <div class="inputdiv">
+        <input type="text"id ="input" placeholder="Enter celcius value">
+    </div><br>
+    <div>
+        <button type="submit" onclick="convert()">Fahrenheit convertor</button>
+    </div><br>
+    <div id="result">
+
+    </div>
+    
+    </div>
+    <script>
+        function convert()
+        {
+       const c=Number(document.getElementById("input").value);
+       const Fahrenheit=(c*9/5)+32;
+       
+       const result=document.getElementById("result");
+       result.innerHTML=Fahrenheit;
+        } -->
+    <!-- </script>
+</body>
+</html>
+        
+        // string -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let string1="hi hello am gayathri"
+            let string2="Am a developer"
+            console.log(string1+ " " +string2)
+            console.log(string2.slice(-3))
+
+            let firstname="Gayathri"
+            let lastname="veerappan"
+            let city="chennai"
+            console.log(`${firstname} ${lastname} lives in ${city}`)
+
+
+            let matrix=[[1,2,3],[4,5,6],[7,8,9]]
+            console.log(matrix[1][2])
+
+            let array=["apple","orange","guva"]
+            array.push("watermelon");
+            console.log(array)
+            array.pop()
+            console.log(array)
+            array.shift()
+            console.log(array)
+            array.unshift("cherry")
+            console.log(array);
+
+
+            let name=['a','b','c','d','e','f']
+            console.log(name)
+            name.splice(2,3)
+            console.log(name)
+            name.splice(0,1,"x")  // used for replace also
+            console.log(name)
+
+            let str="a,b,c,d,e"
+            console.log(str)
+            let arr=str.split(',')
+            console.log(arr)
+           
+
+// if else
+
+let mark=false
+if(mark){
+    console.log("hi")
+}
+else{
+    console.log("no")
+}
+
+
+let age=18;
+let canvote=age>=18?"yes":"no"
+console.log(canvote)
+
+        </script>
+    </body>
+    </html>
+    
+    

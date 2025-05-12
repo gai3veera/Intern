@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js intro</title>
+    <link rel="stylesheet" href="">
+    
+
+
+
+    
+</head>
+<body>
+    <h1 id="message"></h1>
+
+    <script>
+// console.log("hello");
+// alert('hi');
+
+let amount=1000;
+console.log("your bill amount is Rs."+amount);
+let a=51;
+let b=5
+console.log(a%b);  // annswer is one....... its give the reminder.
+let c=a++;
+console.log(c);  /// here it will show c=51
+console.log(c); /// here it will show c=51 but 1 incremented
+ c=++a; // here c will show 52+1=53
+ console.log(c);
+ console.log(typeof(c));
+
+ a=500;
+ console.log(a>50 && a%10==1);
+ console.log(a>50 && a%10==0);
+a>>1
+a<<1
+console.log(a);
+// let tickets=prompt("how many tickets do you want?")
+// console.log("you should pay",tickets*50)
+// let d=prompt("enter the number")
+// console.log(10+d);  // it will show 1010 bcz d is string
+// console.log(Number(d)+10)
+
+let message=document.getElementById("message");
+message.innerHTML="welcome to our website"
+// message.innerHTML="hi this is priya"
+
+
+
+
+
+    </script>
+</body>
+</html>
