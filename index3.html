@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+        <a href="index4.html">Create Your Account</a>
+        <p>Get started for free</p>
+    </header>
+    <form class="login-form">
+        <input type="email" class="inputf" id="email" placeholder="Email Address"><br>
+        <input type="password" class="inputf" id="pwd" placeholder="Password"><br>
+        <input type="checkbox"><span>Remember-Me</span>&nbsp;&nbsp; <a href="target_blank">Forgot Password</a><br>
+        <button type="submit" class="btn" id="btns">Login</button>
+
+    </form>
+    </div>
+   <script>
+    const form=document.querySelector('.login-form');
+    form.addEventListener('submit',function(event){
+        event.preventDefault();
+    const email=document.getElementById('email').value.trim();
+    const password=document.getElementById('pwd').value.trim();
+         
+            
+            if(email===''|| password===''){
+                alert("please fill all fields");
+
+            }
+            else{
+                document.write("Sucessfully submitted");
+            }
+        }
+        
+    )
+
+   </script>
+</body>
+</html>
